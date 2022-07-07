@@ -7,7 +7,9 @@
 Website for remodeling company in Houston, Texas
 
 # Technologies
-javascript, flask, and bootstrap
+* javascript
+* flask
+* bootstrap
 
 # Set-Up:
 1. Create a python virtual environment (3.9)
