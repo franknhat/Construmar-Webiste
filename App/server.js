@@ -5,11 +5,10 @@ const main = () => {
     const app = new Application();
     //get argument instance
     let instance = Deno.args[0];
-    instance = instance.toLowerCase();
     //init port variable
     let port;
     //inline if else
-    instance == 'local'? port = 3000: port = 80;
+    instance == 'local'? port = 3000: port = 8080;
 
     //listen event listener
     app.addEventListener("listen", ({port, secure }) => {
