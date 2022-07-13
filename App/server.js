@@ -11,9 +11,9 @@ const main = () => {
     instance == 'local'? port = 3000: port = 8080;
 
     //listen event listener
-    app.addEventListener("listen", ({port, secure }) => {
+    app.addEventListener("listen", ({port}) => {
         console.log(
-          `Listening on: ${secure ? "https://" : "http://"}${"localhost"}:${port}`
+          `Listening on port ${port}`
         );
     });
       
@@ -36,9 +36,7 @@ const main = () => {
         next();
     })
 
-    app.listen({port: port}, () => {
-        console.log(`app running on port ${port}`);
-    })
+    app.listen({port: port})
 }
 
 main();
