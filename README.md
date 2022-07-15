@@ -8,11 +8,13 @@ Website for remodeling company in Houston, Texas
 
 # Technologies
 * javascript
-* flask
+* deno
 * bootstrap
 
 # Set-Up:
-1. Create a python virtual environment (3.9)
-2. pip install -r requirements.txt
-3. export FLASK_APP=app.py && FLASK_DEBUG=1
-4. flask run
+1. install deno
+2. $deno run --allow-net --allow-read App/server.js local
+
+# Server Links
+* https://prod-app-6mwmhwfa3a-uc.a.run.app/
+* https://dev-app-6mwmhwfa3a-uc.a.run.app/
