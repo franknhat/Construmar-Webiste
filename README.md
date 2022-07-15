@@ -17,5 +17,5 @@ Website for remodeling company in Houston, Texas
 2. $deno run --allow-net --allow-read App/server.js local
 
 # Server Links
-* https://prod-app-6mwmhwfa3a-uc.a.run.app/
-* https://dev-app-6mwmhwfa3a-uc.a.run.app/
+* <a href="https://prod-app-6mwmhwfa3a-uc.a.run.app/" target="_blank">Product Server</a>
+* <a href="https://dev-app-6mwmhwfa3a-uc.a.run.app/" target="_blank">Development Server</a>
