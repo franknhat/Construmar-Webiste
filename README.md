@@ -17,5 +17,5 @@ Website for remodeling company in Houston, Texas
 2. $deno run --allow-net --allow-read App/server.js local
 
 # Server Links
-* <a href="http://34.122.18.92:8001/">Product Server</a>
+* <a href="http://34.122.18.92:8001/">Production Server</a>
 * <a href="http://34.122.18.92:8000/">Development Server</a>
