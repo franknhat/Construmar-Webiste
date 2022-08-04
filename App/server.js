@@ -1,4 +1,4 @@
-import { Application } from "https://deno.land/x/oak/mod.ts";//oak library for deno
+import { Application} from "https://deno.land/x/oak/mod.ts";//oak library for deno
 
 const main = () => {
     //create a new application instance
@@ -16,7 +16,7 @@ const main = () => {
           `Listening on port ${port}`
         );
     });
-      
+    
     //read the html file and send it to the client
     app.use(async (ctx, next) => {
         try {
