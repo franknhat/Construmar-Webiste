@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Construmar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/65f5d3d16a.js" crossorigin="anonymous"></script>
+
+        <style> 
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+            .bg{
+                background-image: url(background.jpg);
+                height: 100%; 
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+           .image-opacity{ 
+                width: 100%;
+                height: 100%;
+                position: absolute; 
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%); 
+                background-color: rgba(0, 0, 0, .45); 
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+           .icons {
+            margin-left: 10px;
+            font-size: 30px;
+            position:fixed; 
+            bottom:10px; 
+            left:30px;
+            color: white
+           }
+
+           i {
+            margin-right: 20px;
+           }
+
+           h1 {
+            font-size: 100px;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+            color: white;
+            }
+
+            a, a:hover, a:focus, a:active {
+                text-decoration: none;
+                color: inherit;
+            }
+        </style>
+
     </head>
+    
     <body>
-        <h1>This is a change</h1>
+        <div class="bg"></div>
+        
+        <div class="image-opacity">
+            <h1>COMING SOON!</h1>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.tiktok.com/@buildeverythinginwood?_t=8U9Zju885L1&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100080370668999"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        
+
     </body>
 </html>
