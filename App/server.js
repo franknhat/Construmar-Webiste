@@ -21,8 +21,8 @@ const main = () => {
     app.use(async (ctx, next) => {
         try {
             await ctx.send({
-                root: `${Deno.cwd()}/App/static/Templates`,
-                index: 'index.html'
+                root: `${Deno.cwd()}/App/static`,
+                index: 'Templates/index.html'
             });
         }catch{
             await next();
