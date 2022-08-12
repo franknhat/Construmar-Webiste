@@ -1,4 +1,5 @@
 import { Application} from "https://deno.land/x/oak/mod.ts";//oak library for deno
+import router from './router.js'
 
 const main = () => {
     //create a new application instance
@@ -18,16 +19,8 @@ const main = () => {
     });
     
     //read the html file and send it to the client
-    app.use(async (ctx, next) => {
-        try {
-            await ctx.send({
-                root: `${Deno.cwd()}/App/static`,
-                index: 'Templates/index.html'
-            });
-        }catch{
-            await next();
-        }
-    })
+    app.use(router.routes());
+    app.use(router.allowedMethods());
 
     //error handling html read
     app.use(async (ctx, next) => {
