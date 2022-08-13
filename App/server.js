@@ -1,7 +1,7 @@
 import { Application} from "https://deno.land/x/oak/mod.ts";//oak library for deno
-import router from './router.js'
+import pages from './Routers/pages.js'
 
-const main = () => {
+const pageService = () => {
     //create a new application instance
     const app = new Application();
     //get argument instance
@@ -18,25 +18,19 @@ const main = () => {
         );
     });
     
-    //read the html file and send it to the client
-    app.use(router.routes());
-    app.use(router.allowedMethods());
+    //pass the request to the page router
+    app.use(pages.routes());
+    app.use(pages.allowedMethods());
 
     //send the static files to client
-    app.use(async ctx => {
+    app.use(async (ctx, next) => {        
+        //send static folder here async
         await ctx.send({
-            root: `${Deno.cwd()}/App/static/`
+            root: `${Deno.cwd()}/App/Static/`
         })
-    })
-
-    //error handling html read
-    app.use(async (ctx, next) => {
-        //internal server error
-        ctx.response.status = 500;
-        next();
     })
 
     app.listen({port: port})
 }
 
-main();
+pageService();
